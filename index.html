@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Example of GIS with LeafletJS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/css/w3.css" />
+    <link rel="stylesheet" href="dist/css/leaflet.css" />
+    <link rel="stylesheet" href="dist/css/leaflet.pm.css" />
+    <script src="dist/js/leaflet.js"></script>
+    <script src="dist/js/leaflet.providers.js"></script>
+    <script src="dist/js/turf.min.js"></script>
+    <script src="dist/js/leaflet.pm.min.js"></script>
+    <script src="dist/js/leaflet.bing.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
+</head>
+<body>
+    <div class="w3-container w3-teal">
+        <h1>Example of LeafletJS with plugins</h1>
+    </div>
+    <div class="w3-container">
+        <div class="w3-row-padding">
+            <div class="w3-col l6 m12 s12 xs12">
+                <h4>Pilih penyedia peta pada sudut kanan atas peta</h4>
+                <h4>Ganti posisi peta</h4>
+                <label>Latitude</label>
+                <input class="w3-input w3-small w3-border" type="text" id="lat"/>
+                <label>Longitude</label>
+                <input class="w3-input w3-small w3-border" type="text" id="lng"/>
+                <button type="submit" class="w3-btn w3-teal w3-small" onclick="gantiPosisiPeta()">Ganti Posisi</button>
+                <button type="submit" class="w3-btn w3-teal w3-small" onclick="temukanLokasi()">Lokasi Saya</button>
+                <button type="submit" class="w3-btn w3-teal w3-small" onclick="matikanLokasi()">Matikan Lokasi Saya</button>
+                
+                <h3>Daftar Polygon</h3>
+                <table id="listPolygon" class="w3-table w3-border w3-striped w3-hover"></table>
+                
+                <h3>Daftar plugin dan library yang digunakan :</h3>
+                <ol>
+                    <li><a href="http://leafletjs.com">LeafletJS (Library maps dengan berbagai tile server support)</a></li>
+                    <li><a href="http://turfjs.org">TurfJS (GeoJSON generator)</a></li>
+                    <li><a href="https://github.com/codeofsumit/leaflet.pm">Leaflet.pm (Menggambar poligon,marker dll pada peta)</a></li>
+                    <li><a href="https://github.com/leaflet-extras/leaflet-providers">leaflet providers (untuk tile server mapbox dan here maps)</a></li>
+                    <li><a href="https://github.com/digidem/leaflet-bing-layer">leaflet bing layers (untuk tile server bing maps)</a></li>
+                </ol>
+            </div>
+            <div class="w3-col l6 m12 s12 xs12">
+                <h3>Tambahkan poligon untuk melihat hasil</h3>
+                <div id="mapid" style="width: 100%; height: 500px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container w3-margin-top w3-blue-grey">
+        <h3>Source: <a href="https://github.com/egodasa/gisleafletosm">github.com/egodasa/gisleafletosm</a></h3>
+    </div>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>

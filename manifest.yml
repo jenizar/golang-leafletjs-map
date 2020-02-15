@@ -1,0 +1,7 @@
+---
+applications:
+- name: golang-leafletjs-map
+  buildpack: go_buildpack
+  memory: 256M
+  env:
+    GOPACKAGENAME : golang-leafletjs-map
