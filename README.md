@@ -1,7 +1,9 @@
 # golang leafletjs map
  Deploy Golang apps ** LeafletJS Map ** on SAP Cloud Platform using Cloud Foundry
 
+![alt text](https://github.com/jenizar/golang-leafletjs-map/blob/master/Screenshot1.png)
 
+![alt text](https://github.com/jenizar/golang-leafletjs-map/blob/master/Screenshot2.png)
 
 Youtube video:
 
